@@ -12,5 +12,7 @@ Welcome to the **Bleach Web Project**! This is a fan website dedicated to the po
 
 ^That's My wife EHE ^^
 
+<div class='Link>
 <a href='https://kazyavx.github.io/BleachTYBW-Themed-Web/'>
-<h2>If You wanna see the published website, you can click here</h2>
+   <h2>Click Here to see the published Website</h2>
+</div>
