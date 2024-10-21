@@ -1,4 +1,6 @@
-# Bleach Web Project
+# Bleach Web Project |JUST FOR FUN| 
+
+I Make this because i bored and teh idea comes from nowhere
 
 Welcome to the **Bleach Web Project**! This is a fan website dedicated to the popular anime and manga series *Bleach* created by Tite Kubo.
 
@@ -12,7 +14,5 @@ Welcome to the **Bleach Web Project**! This is a fan website dedicated to the po
 
 ^That's My wife EHE ^^
 
-<div class='Link>
-<a href='https://kazyavx.github.io/BleachTYBW-Themed-Web/'>
-   <h2>Click Here to see the published Website</h2>
-</div>
+
+<a href='https://kazyavx.github.io/BleachTYBW-Themed-Web/'>Click Here, if you wanna see the published website
