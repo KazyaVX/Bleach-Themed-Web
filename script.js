@@ -26,3 +26,33 @@ window.onscroll = function() {
       aboutMe.style.display = "block"; // Tampilkan bagian "About Me"
     }
   };
+
+ // Ambil elemen section3 dan audio
+const section3 = document.getElementById('section3');
+const backgroundMusic = document.getElementById('backgroundMusic');
+
+// Fungsi untuk memulai audio dengan interaksi pengguna
+function playMusic() {
+    if (backgroundMusic.paused) {
+        backgroundMusic.play().catch(error => {
+            console.log('Audio tidak dapat diputar secara otomatis: ', error);
+        });
+    }
+}
+
+// Event listener untuk deteksi scroll
+window.addEventListener('scroll', function() {
+    const sectionPosition = section3.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.5;
+
+    if (sectionPosition < screenPosition) {
+        playMusic();
+    }
+});
+
+// Cek apakah audio dapat dimulai setelah interaksi pengguna
+document.addEventListener('click', () => {
+    if (backgroundMusic.paused) {
+        playMusic();
+    }
+});

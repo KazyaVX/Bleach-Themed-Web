@@ -194,3 +194,91 @@ section {
     font-size: 2em;
     font-family: "Stardos Stencil", system-ui;
 }
+
+.section3 {
+    position: relative;
+    height: 100vh;
+    background: url('./Asseeeets/nounohan.jpeg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between; /* Untuk memposisikan item di kiri dan kanan */
+    align-items: center; /* Untuk memposisikan item secara vertikal di tengah */
+    color: white;
+    padding: 20px;
+    background-blend-mode: darken;
+}
+
+.unoha {
+    width: 400px; 
+    transition: 1s ease-in-out;
+    z-index: 5;
+    position: absolute;
+    transition: transform 0.3s ease;
+    transform: translate(550px,90px)
+    
+}
+
+.app-name-left {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding-right: 100px;
+    writing-mode: vertical-lr;
+}
+
+.app-name-right {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    writing-mode: vertical-lr;
+}
+
+
+.app-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.app-name-left h2, .app-name-right h2 {
+    font-size: 2em;
+    font-family: 'Hina Mincho', sans-serif;
+    text-decoration: none;
+}
+
+/* Animasi Unohana */
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scale(0.8); /* Mulai dengan sedikit lebih kecil */
+    }
+    to {
+        opacity: 1;
+        transform: scale(1); /* Ukuran normal */
+    }
+}
+
+/* Animasi saat Unohana muncul */
+.sectiontree.active .unoha {
+    animation: appear 3s forwards;
+}
+
+.content {
+    position: absolute; /* Pastikan konten berada di depan Unohana */
+    z-index: 10;
+    top: 10%; /* Anda dapat menyesuaikan ini jika ingin konten lebih jauh dari gambar */
+    text-shadow: 2px 2px 5px black;
+}
+
+.content h2 {
+    font-size: 3em;
+}
+
+.content p {
+    font-size: 1.5em;
+}
+
+
